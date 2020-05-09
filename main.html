@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>StockWatch</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="product.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faster+One&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap"> 
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <nav class="site-header sticky-top py-1">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <a class="py-2" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                        <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                        <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                        <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                        <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                        <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                    </svg> </a>
+                <a class="py-2 d-none d-md-inline-block" href="product.html#about-us">Home</a>
+                <a class="py-2 d-none d-md-inline-block" href="watchlist.html">Watchlist</a>
+                <a class="py-2 d-none d-md-inline-block" href="sign-in.html">Log In</a>
+                <a class="py-2 d-none d-md-inline-block" href="sign-up.html">Sign Up</a>
+                <a class="py-2 d-none d-md-inline-block" href="#about-us">About Us</a>
+                <div>
+                    <input class="py-2 d-none d-md-inline-block" id="txtStockw" type="text" placeholder="Search For A Stock">
+                    <button id="searchButtonw">Find Stock</button>
+                </div>
+            </div>
+        </nav>
+        <div id="cardStocksw">
+</div>
+        <ul id="stocksMain">
+</ul>
+        <!-- JQUERY AND BOOTSTRAP SCRIPTS -->
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+        <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Firebase Scripts -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+        <script> const firebaseConfig = {
+        apiKey: "AIzaSyBz83kqwVu8gWrGAjkitG3sh5VtbWfbG2U",
+        authDomain: "stock-a30ff.firebaseapp.com",
+        databaseURL: "https://stock-a30ff.firebaseio.com",
+        projectId: "stock-a30ff",
+        storageBucket: "stock-a30ff.appspot.com",
+        messagingSenderId: "628920247502",
+        appId: "1:628920247502:web:93439270d44745fc435c9f"
+    }
+    </script>
+        <script>firebase.initializeApp(firebaseConfig)</script>
+        <!-- GENERAL SCRIPTS -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/watchlistfile.js"></script>
+    </body>
+</html>

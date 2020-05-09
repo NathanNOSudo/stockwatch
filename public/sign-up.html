@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: url(/toTheMoonResize.jpg);">
+
+<head>
+  <!-- BEGIN META TAGS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Registration Page</title>
+
+  <!-- GENERAL CSS LINKS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+    id="bootstrap-css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+  <!-- OUR CSS LINKS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="text-center"
+  style="background-image:url(images/plasma_d.gif); color: #ffffff; background-repeat:no-repeat; background-size: cover;">
+  <div class="container">
+    <br>
+    <hr>
+    <article class="card-body mx-auto" style="max-width: 400px; padding: 50px">
+      <div>
+        <h4 class="card-title mt-3 text-center" style="color: #f9f9f9;">Create Account</h4>
+        <img alt="" width="72" height="72" style="background-image: url(images/download.jpeg)">
+        <p class="text-center" style="color: #fefefe; padding-top: 15px;">Get started with your free account</p>
+        <p>
+          <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Sign-Up via
+            Google</a>
+          <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Sign-Up via
+            Phone</a>
+        </p>
+        <p class="divider-text"> <span class="bg-light" style="background-color: #313131!important;">OR</span>
+        </p>
+        <!-- BEGIN INPUT ITEMS -->
+        <form>
+
+
+          <!-- form-group// -->
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+            </div>
+            <input id="txtEmail" name="" class="form-control" placeholder="Email address" type="email">
+          </div>
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+            </div>
+            <input id="txtName" name="" class="form-control" placeholder="Full name" type="text">
+          </div>
+
+          <!-- form-group//  -->
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+            </div>
+            <input id="txtPassword" class="form-control" placeholder="Enter Password" type="password">
+          </div>
+
+          <!-- form-group//-->
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+            </div>
+            <input class="form-control" placeholder="Repeat password" type="password">
+          </div>
+
+          <!-- form-group //END -->
+
+          <div class="form-group">
+            <button id="btnSignUp" type="submit" class="btn btn-primary btn-block"> Create account </button>
+          </div>
+
+          <!-- REDIRECT TO SIGN IN -->
+          <p id="btnLogin" class="text-center" style="color: #f7f0f0;">Have an account?<a href="sign-in.html"> Log In
+            </a></p>
+        </form>
+      </div>
+    </article>
+
+    <!-- card.// -->
+  </div>
+  <!--container end.//-->
+  <!------------- SCRIPTS START ------------->
+
+  <!-- Firebase Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBz83kqwVu8gWrGAjkitG3sh5VtbWfbG2U",
+    authDomain: "stock-a30ff.firebaseapp.com",
+    databaseURL: "https://stock-a30ff.firebaseio.com",
+    projectId: "stock-a30ff",
+    storageBucket: "stock-a30ff.appspot.com",
+    messagingSenderId: "628920247502",
+    appId: "1:628920247502:web:93439270d44745fc435c9f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- General scripts (BootStrap and jquery) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Our scripts -->
+  <script src="js/firebase-register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" style="background-image: url(images/toTheMoonResize.jpg);">
+
+<head>
+    <!-- BEGIN META TAGS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Page</title>
+
+    <!-- GENERAL CSS LINKS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faster+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap">
+    <!-- OUR CSS LINKS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="text-center"
+    style=" color: #ffffff; background-repeat:no-repeat; background-size: cover;">
+        <nav class="site-header sticky-top py-1">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <a class="py-2" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="d-block mx-auto">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                        <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                        <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                        <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                        <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                        <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                    </svg> </a>
+                <a class="py-2 d-none d-md-inline-block" href="product.html">Home</a>
+                <a class="py-2 d-none d-md-inline-block" href="watchlist.html">Watchlist</a>
+                <a class="py-2 d-none d-md-inline-block" href="sign-in.html">Log In</a>
+                <a class="py-2 d-none d-md-inline-block" href="sign-up.html">Sign Up</a>
+                <div><input class="py-2 d-none d-md-inline-block" id="txtStockw" type="text"
+                        placeholder="Search For A Stock"><button id="searchButtonw">Find Stock</button></div>
+            </div>
+        </nav>
+    <div class="container">
+        <br>
+        <hr>
+        <article class="card-body mx-auto" style="max-width: 400px; padding: 50px">
+            <div>
+                <h4 class="card-title mt-3 text-center" style="color: #f9f9f9;">Create Account</h4>
+                <img alt="" width="72" height="72" style="background-image: url(images/download.jpeg)">
+                <p class="text-center" style="color: #fefefe; padding-top: 15px;">Get started with your free account</p>
+                <p>
+                    <button href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter" id="btnGoogle"></i>   Sign-Up via
+                        Google</button>
+                    <button href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f" id="btnPhone"></i>   Sign-Up via
+                        Phone</button>
+                </p>
+                <p class="divider-text"> <span class="bg-light" style="background-color: #313131!important;">OR</span>
+                </p>
+                <!-- BEGIN INPUT ITEMS --> 
+                    <!-- form-group// -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        </div>
+                        <input id="txtEmail" name="" class="form-control" placeholder="Email address" type="email">
+                    </div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input id="txtName" name="" class="form-control" placeholder="Full name" type="text">
+                    </div>
+
+                    <!-- form-group//  -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input id="txtPassword" class="form-control" placeholder="Enter Password" type="password">
+                    </div>
+
+                    <!-- form-group//-->
+                    <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" placeholder="Repeat password" type="password">
+                        </div>
+
+                    <!-- form-group //END -->
+
+                    <div class="form-group">
+                        <button id="btnSignUp" type="submit" class="btn btn-primary btn-block"> Create account </button>
+                    </div>
+                    
+                    <!-- REDIRECT TO SIGN IN -->
+                    <p id="btnLogin" class="text-center" style="color: #f7f0f0;">Have an account?<a href="sign-in.html"> Log In </a></p>
+            </div>
+        </article>
+
+    <!-- card.// -->
+    </div>
+    <!--container end.//-->
+    <!------------- SCRIPTS START ------------->
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+        <!-- // Your web app's Firebase configuration -->
+        <!-- Firebased configured in signup.js -->
+
+
+    <!-- General scripts (BootStrap and jquery) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Our scripts -->
+    <script src="assets/js/signup.js"></script>
+</body>
+
+</html>

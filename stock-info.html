@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example detailed information page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faster+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/20.1.3/css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/20.1.3/css/dx.dark.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/event.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/supplemental.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cldrjs/0.4.4/cldr/unresolved.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize/message.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize/number.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize/currency.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/globalize/1.1.1/globalize/date.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/20.1.3/js/dx.all.js"></script>
+    <script src="assets/js/stock-info.js"></script>
+</head>
+
+<body class="dx-viewport">
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="d-block mx-auto">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                    <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                    <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                    <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                    <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                    <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                </svg> </a>
+            <a class="py-2 d-none d-md-inline-block" href="product.html#about-us">Home</a>
+            <a class="py-2 d-none d-md-inline-block" href="watchlist.html">Watchlist</a>
+            <a class="py-2 d-none d-md-inline-block" href="sign-in.html">Log In</a>
+            <a class="py-2 d-none d-md-inline-block" href="sign-up.html">Sign Up</a>
+            <a class="py-2 d-none d-md-inline-block" href="#about-us">About Us</a>
+            <div><input class="py-2 d-none d-md-inline-block" id="txtStockw" type="text"
+                    placeholder="Search For A Stock"><button id="searchButtonw">Find Stock</button></div>
+        </div>
+    </nav>
+    <div id="company-information">
+
+    </div>
+    <div class="demo-container">
+        <div id="chart-demo">
+            <div id="zoomedChart"></div>
+            <div id="range-selector"></div>
+        </div>
+    </div>
+</body>
+
+</html>

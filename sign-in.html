@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="en" style="background-image: url(images/toTheMoonResize.jpg); background-repeat: no-repeat; background-size: cover;">
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="description" content="">
+            <meta name="author" content="">
+            <title>Sign in StockWatch</title>
+            <!-- Bootstrap core CSS -->
+            <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+            <!-- Custom styles for this template -->
+            <link href="product.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faster+One&display=swap">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap">
+            <!-- Custom styles for this template -->
+            <link href="css/sign-in.css" rel="stylesheet">
+        </head>
+        <body class="text-center">
+            <form class="form-signin">
+                <h1 class="h3 mb-3 font-weight-normal" style="color: #ffffff;">Welcome Back</h1>
+                <div>
+                    <img alt="" width="120" height="120" style="background-image: url('images/plasma_d.gif'); margin-bottom: 10px; background-size: cover; border-style: solid; border-color: #fcfcfc; border-radius: 83px 83px 83px 82px;">
+                    <h1 class="h3 mb-3 font-weight-normal" style="color: #f7f2f2;">Please sign in</h1>
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="email" id="txtEmail" class="form-control" placeholder="Email Address" required autofocus>
+                    <input type="password" id="txtPassword" class="form-control" placeholder="Password" required>
+                    <div class="checkbox mb-3">
+                        <label style="color: #fbf9f9; margin-top: 10px;">
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button id="btnLogin" class=" btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                    <p id="btnLogin" class="text-center" style="color: #f7f0f0;">Don't have an account? <a href="sign-up.html">Sign Up</a> <p class="mt-5 mb-3 text-muted" style="color: #f9f3f3;">&copy; 2020 DC-Stocks</p>  
+                </div>
+                <!------------- SCRIPTS START ------------->
+                <!-- Firebase Scripts -->
+                <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+                <!-- Firebase configured in signin.js -->
+                <!-- Bootstrap scripts -->
+                <script src="bootstrap/js/jquery.min.js"></script>
+                <script src="bootstrap/js/popper.js"></script>
+                <script src="bootstrap/js/bootstrap.min.js"></script>                 
+                <!-- Our scripts -->
+                <script src="assets/js/signin.js"></script>
+                <!-- END SCRIPTS -->
+        </body>
+        <!-- END BODY -->
+  
+    </html>
