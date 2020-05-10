@@ -87,7 +87,7 @@ video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    display: block;
+    vertical-align: baseline;
 }
 
 a {
@@ -176,9 +176,9 @@ body {
 }
 
 div#wrapper {
-    /* height: 13vh */
-    /* position: relative */
-    /* background: #f3f6f9 */
+    height: 100vh;
+    position: relative;
+    background: #f3f6f9;
 }
 
 /* HEADER */
@@ -218,10 +218,7 @@ header h2 {
 
 /* MAIN */
 main {
-    display: flex;
-    width: 100%;
-
-    /* min-height: 5em */
+    min-height: 5em;
 }
 
 main #featured {
@@ -237,8 +234,7 @@ main #featured {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: left;
-
-    /* font-size: 1.2rem */
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333;
 }
@@ -249,6 +245,14 @@ main #featured {
 
     /* object-position: left */
     height: 50%;
+}
+
+.description {
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5b5b5b;
 }
 
 .source {
@@ -273,16 +277,23 @@ main #featured {
 
 /* cards */
 .card {
+    /* width: 385px */
+    /* display: inline-block */
+    /* position: relative */
+    /* min-height: 500px */
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(255, 207, 2, 0.99);
     transition: 0.3s;
     border-radius: 25px;
+
+    /* 5px rounded corners */
+    background-color: #e3e6ef;
     margin-top: .5rem;
     margin-bottom: .5rem;
     margin-left: .5rem;
     margin-right: .5rem;
-    box-shadow: 0 8px 16px 0 rgba(255, 207, 2, 0.99);
-    padding: 16px;
-    text-align: center;
-    background-color: #ffffff;
 }
 
 /* Add some padding inside the card container */
@@ -336,8 +347,8 @@ div.keepOpen {
     /* desktop */
     div#wrapper {
         border-radius: 10px;
-        max-width: auto;
-        margin: 0rem auto 0 auto;
+        max-width: 800px;
+        margin: 3rem auto 0 auto;
         height: auto;
         box-shadow: 12px 12px 20px #999;
         background-color: #000000;

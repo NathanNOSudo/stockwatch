@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fugaz One', cursive;
+    margin-top: 0px;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(90deg, #000000, #434343);
+    background-size: cover;
+}
+
+#container {
+    width: auto;
+    height: auto;
+    margin-top: -;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#container h1 {
+    /* color: #ECF6CE */
+    margin-bottom: 30px;
+}
+
+#container > hr {
+    border: none;
+    border: 1px solid #fff;
+    width: 80%;
+}
+
+.Card: 10px;
+
+.front,
+.back {
+    background: -webkit-radial-gradient(right center, rgb(233, 211, 98) 0%, rgb(187, 171, 86) 0%, rgb(78, 75, 58) 0%, rgb(113, 106, 67) 16.129%, rgb(51, 51, 51) 64.0553%) !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    border-radius: 5px;
+}
+
+.front {
+    padding-top: 20px;
+    transform: rotateY(0deg);
+    text-align: center;
+    padding: 30px;
+    background: -webkit-radial-gradient(right center, rgb(233, 211, 98) 0%, rgb(187, 171, 86) 0%, rgb(78, 75, 58) 0%, rgb(113, 106, 67) 16.129%, rgb(51, 51, 51) 64.0553%) !important;
+    background-image: url('images/Cr4tRh8.jpg');
+}
+
+.back {
+    background: linear-gradient(90deg, #000000, #434343);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    padding: 40px 15px;
+}
+
+.card:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+/* //styling */
+.front .contact {
+    height: 120px;
+    width: 120px;
+    border: 5px solid gold;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: auto;
+}
+
+.front .name {
+    padding-top: 20px;
+    color: #fff;
+    display: block;
+    font-size: 1.8em;
+}
+
+.front .job {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.front hr {
+    border: none;
+    color: gold;
+    border: 1px solid;
+}
+
+.back .icon {
+    fill: #fff;
+    color: inherit;
+    height: auto;
+    width: 33px;
+    margin-top: 15px;
+    color: white;
+}
+
+.back .icon:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+.container {
+    max-width: 960px;
+}
+
+/* * Custom translucent site header */
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+    color: white;
+    transition: ease-in-out color .15s;
+}
+
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* * Dummy devices (replace them with your own or something else entirely!) */
+.product-device {
+    /* color: rgb(187, 171, 86) 0% */
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: rgba(51, 51, 51, .9);
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    background-image: url('images/phone-with-stocks.jpg');
+    background-size: cover;
+}
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #4d5054;
+}
+
+/* * Extra utilities */
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.flex-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        -ms-flex: 1;
+        -webkit-box-flex: 1;
+        flex: 1;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    background: -webkit-radial-gradient(right center, rgb(233, 211, 98) 0%, rgb(187, 171, 86) 0%, rgb(78, 75, 58) 0%, rgb(113, 106, 67) 16.129%, rgb(51, 51, 51) 64.0553%);
+}
+
+/* FontAwesome for working BootSnippet :> */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+#team {
+    background: black !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    /* background-color: #108d6f;
+    border-color: #108d6f; */
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+}
+
+section {
+    padding-top: 1px;
+    padding-bottom: 40px;
+    display: grid;
+    object-fit: contain;
+    background: linear-gradient(179deg, rgb(0, 0, 0) 0%, rgb(67, 67, 67) 100%);
+    margin-right: -5px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+section .section-title {
+    text-align: center;
+
+    /* color: #007b5e; */
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: black;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+header.team {
+    background: linear-gradient(90deg, #000000, #434343);
+    margin-top: 20px;
+}
+
+header.team.h1 {
+}
+
+.team {
+    font-family: 'Fugaz One', cursive;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+card.span.p {
+}
+
+.deviceBG {
+    color: #f5f0f0;
+    font-family: 'Fugaz One', cursive;
+    background-image: url('images/phone-with-stocks.jpg');
+}
+

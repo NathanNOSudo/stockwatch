@@ -87,7 +87,7 @@ video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    display: block;
+    vertical-align: baseline;
 }
 
 a {
@@ -336,8 +336,8 @@ div.keepOpen {
     /* desktop */
     div#wrapper {
         border-radius: 10px;
-        max-width: auto;
-        margin: 0rem auto 0 auto;
+        max-width: 800px;
+        margin: 3rem auto 0 auto;
         height: auto;
         box-shadow: 12px 12px 20px #999;
         background-color: #000000;

@@ -1,95 +1,25 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain) */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    display: block;
-}
-
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; } */
 a {
     color: inherit;
     font-size: 100%;
@@ -129,11 +59,12 @@ table {
 }
 
 /* Prevents iPhone from resizing in landscape mode */
-/* html {
+html {
     -webkit-text-size-adjust: none;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-} */
+}
+
 /* apply a natural box layout model to all elements */
 * {
     -moz-box-sizing: border-box;
@@ -163,8 +94,10 @@ div.scrollmenu a {
 }
 
 #header-container {
+    position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 
 body {
@@ -176,14 +109,13 @@ body {
 }
 
 div#wrapper {
-    /* height: 13vh */
-    /* position: relative */
-    /* background: #f3f6f9 */
+    height: 100vh;
+    position: relative;
+    background: #f3f6f9;
 }
 
 /* HEADER */
 header {
-    width: 100%;
     background-color: rgba(0, 68, 102, 0);
     padding: .5rem 0 .5rem 2%;
     background: -webkit-radial-gradient(right center, rgb(0, 0, 0) 0%, rgb(67, 67, 67) 100%);
@@ -218,10 +150,7 @@ header h2 {
 
 /* MAIN */
 main {
-    display: flex;
-    width: 100%;
-
-    /* min-height: 5em */
+    min-height: 5em;
 }
 
 main #featured {
@@ -237,8 +166,7 @@ main #featured {
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: left;
-
-    /* font-size: 1.2rem */
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333;
 }
@@ -249,6 +177,14 @@ main #featured {
 
     /* object-position: left */
     height: 50%;
+}
+
+.description {
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5b5b5b;
 }
 
 .source {
@@ -273,25 +209,31 @@ main #featured {
 
 /* cards */
 .card {
+    min-height: 500px;
+
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(255, 207, 2, 0.99);
     transition: 0.3s;
     border-radius: 25px;
+
+    /* 5px rounded corners */
+    background-color: #e3e6ef;
+    color: blue;
     margin-top: .5rem;
     margin-bottom: .5rem;
     margin-left: .5rem;
     margin-right: .5rem;
-    box-shadow: 0 8px 16px 0 rgba(255, 207, 2, 0.99);
-    padding: 16px;
-    text-align: center;
-    background-color: #ffffff;
 }
 
 /* Add some padding inside the card container */
-/* .container {
+.container {
     padding: 2px 16px;
+    overflow: hidden;
+    width: 75%;
+}
 
-    ||*| overflow: hidden |*||
-    /* width: 75% */
-*/
 img {
     display: none;
     border-radius: 5px 5px 15px 15px;
@@ -317,10 +259,6 @@ div.keepOpen {
 
 @media only screen and (min-width: 480px) {
     /* tablet */
-    #right {
-        float: right;
-    }
-
     #left,
     ht {
         float: left;
@@ -336,8 +274,8 @@ div.keepOpen {
     /* desktop */
     div#wrapper {
         border-radius: 10px;
-        max-width: auto;
-        margin: 0rem auto 0 auto;
+        max-width: 800px;
+        margin: 3rem auto 0 auto;
         height: auto;
         box-shadow: 12px 12px 20px #999;
         background-color: #000000;
@@ -353,8 +291,9 @@ div.keepOpen {
     }
 
     #header-container {
-        /* position: relative */
-        /* top: inherit */
+        position: relative;
+        top: inherit;
+        width: inherit;
     }
 
     #main-body {
@@ -374,5 +313,4 @@ footer {
     bottom-left-border-radius: 8px;
     clear: both;
     background: -webkit-radial-gradient(right center, rgb(0, 0, 0) 0%, rgb(67, 67, 67) 100%);
-}
 }
