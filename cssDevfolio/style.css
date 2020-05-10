@@ -625,7 +625,7 @@ div .col-md-6 {
 }
 
 .intro .intro-title {
-  color: #fff;
+  color: rgb(222, 185, 146);
   font-weight: 600;
   font-size: 3rem;
 }
@@ -633,6 +633,7 @@ div .col-md-6 {
 .intro .intro-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
+  color: rgb(222, 185, 146);
 }
 
 .intro .text-slider-items {
@@ -684,7 +685,8 @@ div .col-md-6 {
 }
 
 .about-mf .about-img img {
-  margin-left: 10px;
+  border: 5px inset #24b67e;
+  margin-left: -1px;
 }
 
 .skill-mf span {
