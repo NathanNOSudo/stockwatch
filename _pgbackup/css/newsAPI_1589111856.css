@@ -56,15 +56,15 @@ a.animated-button:visited:after {
     top: 50%;
     width: 150%;
     z-index: -1;
-    -webkit-transition: all 1s ease 2s;
-    -moz-transition: all 1s ease 2s;
-    -o-transition: all 1s ease 2s;
-    transition: all 1s ease 2s;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
 }
 
 a.animated-button:link:hover,
 a.animated-button:visited:hover {
-    color: gold;
+    color: #FFF;
     text-shadow: none;
 }
 
@@ -79,7 +79,7 @@ a.animated-button:visited {
     display: block;
     margin: 30px auto 0;
     padding: 14px 15px;
-    color: gold;
+    color: #fff;
     font-size: 14px;
     border-radius: 0;
     font-weight: bold;
@@ -88,21 +88,21 @@ a.animated-button:visited {
     text-transform: uppercase;
     overflow: hidden;
     letter-spacing: .08em;
-    text-shadow: 0 0 1px rgb(0, 0, 0), 0 1px 0 rgba(4, 21, 255, 0.842);
-    -webkit-transition: all 1s ease 2s;
-    -moz-transition: all 1s ease 2s;
-    -o-transition: all 1s ease 2s;
-    transition: all 1s ease 2s;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 /* Sandy Buttons */
 a.animated-button.sandy-one {
-    border: 4px solid gold;
-    color: red;
+    border: 2px solid #AEA8D3;
+    color: #FFF;
 }
 
 a.animated-button.sandy-one:after {
-    border: 7px solid red;
+    border: 3px solid #AEA8D3;
     opacity: 0;
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
@@ -112,8 +112,8 @@ a.animated-button.sandy-one:after {
 
 a.animated-button.sandy-one:hover:after {
     height: 120% !important;
-    opacity: 0;
-    color: blue;
+    opacity: 1;
+    color: #FFF;
 }
 
 /* BODY */
