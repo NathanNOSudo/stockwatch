@@ -145,34 +145,29 @@ body {
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 500ms;
+    -webkit-transition: -webkit-transform 300ms;
     transition: -webkit-transform 300ms;
     transition: transform 300ms;
-    transition: transform 500ms, -webkit-transform 500ms;
+    transition: transform 300ms, -webkit-transform 300ms;
     -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
     border-radius: 5px;
 }
 
 .front {
+    padding-top: 20px;
     transform: rotateY(0deg);
     text-align: center;
+    padding: 30px;
     background: -webkit-radial-gradient(right center, rgb(233, 211, 98) 0%, rgb(187, 171, 86) 0%, rgb(78, 75, 58) 0%, rgb(113, 106, 67) 16.129%, rgb(51, 51, 51) 64.0553%) !important;
     background-image: url('images/Cr4tRh8.jpg');
-    padding: 30px;
-    margin-left: -12Px;
-    margin-top: -8px;
-    border-radius: 15px;
-    top: 6px;
 }
 
 .back {
     background: linear-gradient(90deg, #000000, #434343);
     -webkit-transform: rotateY(180deg);
-    transform: rotateY(!80deg);
+    transform: rotateY(180deg);
     padding: 40px 15px;
-    left: 31px;
-    top: 21px;
 }
 
 .card:hover .front {
@@ -239,13 +234,12 @@ body {
 }
 
 .site-header a {
-    color: #ffffff;
+    color: white;
     transition: ease-in-out color .15s;
 }
 
 .site-header a:hover {
-    background-color: gold;
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -473,29 +467,5 @@ card.span.p {
     color: #f5f0f0;
     font-family: 'Fugaz One', cursive;
     background-image: url('images/phone-with-stocks.jpg');
-}
-
-.icons {
-    padding-top: 95px;
-    padding-bottom: 20px;
-}
-
-span {
-    font-size: 25px;
-    padding-top: 17px;
-    margin-top: 16px;
-    padding-bottom: 17px;
-    margin-bottom: 25px;
-}
-
-.span {
-}
-
-.p {
-    font-size: 26px;
-}
-
-p.text-warning {
-    font-size: 22px;
 }
 

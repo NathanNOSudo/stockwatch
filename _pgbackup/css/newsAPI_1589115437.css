@@ -247,16 +247,16 @@ main #featured {
 
 /* cards */
 .card {
-    transition: 1s;
+    transition: 0.3s;
     border-radius: 25px;
     margin-top: .5rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    box-shadow: 0 8px 16px 0 rgba(255, 207, 2, 0.9);
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    box-shadow: 0 8px 16px 0 rgba(255, 207, 2, 0.99);
     padding: 16px;
     text-align: center;
-    background-color: gold;
+    background-color: #ffffff;
 }
 
 /* Add some padding inside the card container */

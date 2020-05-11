@@ -239,13 +239,12 @@ body {
 }
 
 .site-header a {
-    color: #ffffff;
+    color: white;
     transition: ease-in-out color .15s;
 }
 
 .site-header a:hover {
-    background-color: gold;
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
