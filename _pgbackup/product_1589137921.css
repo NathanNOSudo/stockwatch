@@ -122,9 +122,8 @@ body {
 
 #container > hr {
     border: none;
-    margin-left: 5%;
-    border: 2px inset #fff;
-    width: 90%;
+    border: 1px solid #fff;
+    width: 80%;
 }
 
 .card {
@@ -140,25 +139,26 @@ body {
 
 .front,
 .back {
+    background: -webkit-radial-gradient(right center, rgb(233, 211, 98) 0%, rgb(187, 171, 86) 0%, rgb(78, 75, 58) 0%, rgb(113, 106, 67) 16.129%, rgb(51, 51, 51) 64.0553%) !important;
     width: 100%;
     height: 100%;
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 300ms;
     transition: transform 300ms;
-
-    /* transition: transform 500ms, -webkit-transform 500ms */
+    transition: transform 500ms, -webkit-transform 500ms;
     -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
-
-    /* border-radius: 5px */
+    border-radius: 5px;
 }
 
 .front {
     transform: rotateY(0deg);
     text-align: center;
     background: -webkit-radial-gradient(right center, rgb(233, 211, 98) 0%, rgb(187, 171, 86) 0%, rgb(78, 75, 58) 0%, rgb(113, 106, 67) 16.129%, rgb(51, 51, 51) 64.0553%) !important;
+    background-image: url('images/Cr4tRh8.jpg');
     padding: 30px;
     margin-left: -12Px;
     margin-top: -8px;
@@ -496,8 +496,5 @@ span {
 
 p.text-warning {
     font-size: 22px;
-}
-
-.js-scroll {
 }
 

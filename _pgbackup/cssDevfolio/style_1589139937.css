@@ -347,8 +347,7 @@ div .col-md-6 {
 .back-to-top {
     position: fixed;
     display: none;
-
-    /* background: #24b67e */
+    background: #24b67e;
     color: #fff;
     width: 44px;
     height: 44px;

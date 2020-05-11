@@ -350,8 +350,4 @@ footer {
     clear: both;
     background: -webkit-radial-gradient(right center, rgb(0, 0, 0) 0%, rgb(67, 67, 67) 100%);
 }
-
-.front {
-    background-image: url('../img/retro.png');
-}
 }

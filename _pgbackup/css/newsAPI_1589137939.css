@@ -133,8 +133,7 @@ div.scrollmenu a {
 }
 
 .active {
-    color: rgba(255, 193, 7, 1) !important;
-    background-color: rgba(220, 53, 69, 0.7);
+    background-color: rgb(126, 127, 130);
 }
 
 #header-container {
@@ -349,9 +348,5 @@ footer {
     bottom-left-border-radius: 8px;
     clear: both;
     background: -webkit-radial-gradient(right center, rgb(0, 0, 0) 0%, rgb(67, 67, 67) 100%);
-}
-
-.front {
-    background-image: url('../img/retro.png');
 }
 }

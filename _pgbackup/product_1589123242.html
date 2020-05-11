@@ -33,62 +33,45 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap">
         <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
         <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-        <script>/* Pinegrow Interactions, do not remove */ try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id')?document.documentElement.hasAttribute('data-pg-mobile'):(screen.width<1000&&screen.height<1000)){pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}';}else{pgcss+='html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}';}style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}</script>
     </head>
     <body>
+        <nav class="site-header sticky-top py-1">
+            <a class="py-2" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                    <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                    <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                    <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                    <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                </svg><button id="searchButtonw" class="h-auto" style="height: 30px;">Find Stock</button><input class="d-md-inline-block d-none form-control-sm py-2" id="txtStockw" type="text" placeholder="Search For A Stock" style="height: 28px;"> </a>
+            <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+            <button class="btn btn-secondary dropdown-toggle h-50" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height: 28px;">                    Menu              </button>
+            <div class="container d-flex flex-column flex-md-row h-auto justify-content-between">
+                <div class="dropdown"> 
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #545b62;"> 
+                        <a class="dropdown-item" href="product.html">Home</a> 
+                        <a class="dropdown-item" href="watchlist.html">Watchlist</a> 
+                        <a class="dropdown-item" href="sign-in.html">Login</a> 
+                        <a class="dropdown-item" href="sign-up.html">Sign Up</a>
+                        <a class="dropdown-item" href="index.html">Devfolio</a>
+                    </div>                     
+                </div>
+                <div class="text-center">
+</div>
+            </div>
+        </nav>
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
             <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 font-weight-normal text-white" style="font-family: 'Fugaz One', cursive;">Stock Watch</h1>
+                <h1 class="display-4 font-weight-normal text-white">DC STOCKS</h1>
                 <p class="font-weight-normal lead"></p>
+                <button type="button" class="btn btn-success btn-lg btn3d">
+                    <span class="glyphicon glyphicon-ok"></span> 
+                    <a href="sign-up.html">Sign Up!</a>
+                </button>
                 <br>
             </div>
-            <div class="box-shadow d-md-block d-none deviceBG product-device">STOCK WATCH
-                <p>Trending News</p>
-            </div>
+            <div class="box-shadow d-md-block d-none deviceBG product-device">STOCK WATCHER</div>
             <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
-        </div>
-        <div class="row" style="
-/* width: auto */
-/* display: inline */
-/* margin-left: 25% */
-/* margin-right: 25% */
-/* padding-left: 25% */
-/* padding-right: 25% */
-/* height: 300px */
-/* max-height: 407px */">
-            <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav" style="color: gold; font-family: 'Fugaz One', cursive;"> 
-                <div class="container"> 
-                    <a class="navbar-brand js-scroll" href="index.html">DevFolio</a> 
-                    <button class="bg-warning border-danger collapsed navbar-toggler shadow text-capitalize text-danger visible" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation" data-pg-ia='{"l":[{"trg":"load","t":"this","a":"tada","rpt":"3"}]}'> 
-                        <span>M</span> 
-                        <span></span> 
-                        <span></span> 
-                    </button>                     
-                    <div class="navbar-collapse collapse justify-content-end" id="navbarDefault"> 
-                        <ul class="navbar-nav"> 
-                            <li class="nav-item"> 
-                                <a class="nav-link text-warning" href="product.html">Home</a> 
-                            </li>                             
-                            <li class="nav-item"> 
-                                <a class="js-scroll nav-link text-warning" href="news.html">News</a> 
-                            </li>                             
-                            <li class="nav-item"> 
-                                <a class="js-scroll nav-link text-warning" href="watchlist.html">Watch-list</a> 
-                            </li>                             
-                            <li class="nav-item"> 
-                                <a class="nav-link js-scroll" href="sign-in.html">Login</a> 
-                            </li>                             
-                            <li class="nav-item">
-                                <a class="js-scroll nav-link text-warning" href="sign-up.html">Sign Up</a>
-                            </li>                             
-                            <li class="nav-item"> 
-                                <a class="js-scroll nav-link text-warning" href="#contact">Contact</a> 
-                            </li>                             
-                        </ul>                         
-                    </div>                     
-                </div>                 
-            </nav>
-            <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>             
         </div>
         <!-- <div class="card-group">
             <div class="card">
@@ -159,8 +142,6 @@
             <div class="container">
                 <h1 class="font-weight-light h1 team text-white">Meet our awesome team!</h1>
             </div>
-            <input class="d-md-inline-block d-none form-control-sm py-2" id="txtStockw" type="text" placeholder="Search For A Stock" style="height: 28px;">
-            <button id="searchButtonw" class="h-auto" style="height: 30px;">Find Stock</button>
         </header>
         <div id='container'>
             <hr>
@@ -196,7 +177,7 @@
             </div>
             <div class='card'>
                 <div class='front'>
-                    <img src='/img/propic.png' class='contact'/>
+                    <img src='https://s-media-cache-ak0.pinimg.com/736x/ba/45/26/ba4526d03ed12a940bec564cfd9de58f.jpg' class='contact'/>
                     <span class='name'>Nathan Orris</span>
                     <hr>
                     <span class='job'> - Software Engineer - </span>
@@ -261,7 +242,7 @@
                     <hr>
                     <span class='job'>- Software Engineer -</span>
                 </div>
-                <div class='back front'>
+                <div class='back'>
                     <span class="text-warning">Skills:</span>
                     <p class="text-warning">HTML, CSS, Javascript, Python Firebase.</p>
                     <div class='icons'>
@@ -294,4 +275,4 @@
         <!-- end wrapper -->
         <script src="assets/js/stock-info.js"></script>
         <script type="text/javascript" src="assets/js/newsAPI.js"></script>
-        <script type="text/javascript" src="pgia/lib/pgia.js"></script>
+    </body>

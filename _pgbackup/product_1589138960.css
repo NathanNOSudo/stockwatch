@@ -122,9 +122,8 @@ body {
 
 #container > hr {
     border: none;
-    margin-left: 5%;
-    border: 2px inset #fff;
-    width: 90%;
+    border: 1px solid #fff;
+    width: 80%;
 }
 
 .card {
